@@ -18,4 +18,4 @@ to a multitude of reasons, it just doesn't make sense to keep that shared hostin
 shared hosting account is expiring now, so I've switched my domain registrar to [Namecheap](https://www.namecheap.com/) 
 and am trying out [GitHub Pages](https://pages.github.com/). I've known about gh-pages for a while now, and have sort of 
 tinkered with it a little; but not nearly enough to really give it an attempt worthwhile of calling it an attempt. Well 
-here is that attempt... let's see how it goes. 
+here is that attempt... 

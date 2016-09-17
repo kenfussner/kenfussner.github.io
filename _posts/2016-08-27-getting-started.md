@@ -1,15 +1,13 @@
 ---
 layout: post
 title: Getting Started
-description: Getting started on GitHub Pages
-tagline: The next step for the fussner.us journey
+subtitle: Here we go...
+author: kenfussner
+avatar: assets/media/avatar.png
 image: /assets/media/starting-line.jpg
-categories: [misc]
-tags: [random]
+date: 2016-08-27 08:00:00
 ---
-<img src="{{page.image}}" width="85%"/>
-<br/>
-<br/>
+
 #Hello
 
 I'm just getting underway here, and we'll see how it goes. Since I first purchased this domain (_fussner.us_) I've 

@@ -1,9 +1,9 @@
 title: Ken Fussner
 description: My Personal Blog
 author: Ken Fussner
-logo: /assets/media/avatar.png
+baseurl: ""
+url: ""
 github: https://github.com/kenfussner
-about: Software Engineer
 
 baseurl: ""
 url: "http://ken.fussner.us"

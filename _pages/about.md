@@ -1,9 +1,10 @@
 ---
-title: "About Ken"
 layout: single
-excerpt: "Who is this man named Ken"
-sitemap: true
-permalink: /about.html
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
 ---
 
 #Hello there

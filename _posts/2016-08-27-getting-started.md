@@ -1,12 +1,13 @@
----
-layout: post
-title: Getting Started
-subtitle: Here we go...
-author: kenfussner
-avatar: assets/media/avatar.png
-image: /assets/media/f.jpg
-date: 2016-08-27 08:00:00
----
+scope:
+    path: ""
+    type: posts
+values:
+    layout: single
+    author_profile: true
+    read_time: true
+    comments: true
+    share: true
+    related: true
 
 #Hello
 

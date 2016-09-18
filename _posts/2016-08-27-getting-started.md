@@ -4,7 +4,7 @@ title: Getting Started
 subtitle: Here we go...
 author: kenfussner
 avatar: assets/media/avatar.png
-image: /assets/media/starting-line.jpg
+image: /assets/media/f.jpg
 date: 2016-08-27 08:00:00
 ---
 

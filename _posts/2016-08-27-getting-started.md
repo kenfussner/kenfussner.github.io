@@ -1,13 +1,11 @@
-scope:
-    path: ""
-    type: posts
-values:
-    layout: single
-    author_profile: true
-    read_time: true
-    comments: true
-    share: true
-    related: true
+---
+layout: single
+author_profile: true
+read_time: true
+comments: true
+share: true
+related: true
+---
 
 #Hello
 

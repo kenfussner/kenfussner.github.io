@@ -1,14 +1,11 @@
 ---
-title: "About Ken"
 layout: single
-excerpt: "A little about Ken..."
+title: "About Ken"
+excerpt: "I code by day and not by night; well, at least most of the time..."
 author_profile: true
 permalink: /about/
 sitemap: true
 ---
-
-A little about Ken...
-=====================
 
 **I code by day and not by night; well, at least most of the time...**
 

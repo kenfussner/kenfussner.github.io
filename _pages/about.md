@@ -1,7 +1,10 @@
 ---
+title: "About Ken"
 layout: single
+excerpt: "A little about Ken..."
 author_profile: true
 permalink: /about/
+sitemap: true
 ---
 
 A little about Ken...

@@ -1,18 +1,8 @@
 ---
-layout: archive
-author_profile: true
+layout: default
+title: Ken Fussner
 ---
 
-{% include base_path %}
-
-<a href="about/" class="btn btn--info">
-  <i class="fa fa-info-circle"></i> About Ken
-</a>
-
-<h3 class="archive__subtitle">{{ site.data.ui-text[site.locale].recent_posts | default: "Recent Posts" }}</h3>
-
-{% for post in paginator.posts %}
-  {% include archive-single.html %}
-{% endfor %}
-
-{% include paginator.html %}
+{% assign page = site.posts.first %}
+{% assign content = page.content %}
+{% include post.html %}

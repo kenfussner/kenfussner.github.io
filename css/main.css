@@ -147,8 +147,9 @@ img {
 }
 
 .navbar-custom .img-avatar {
+  display: inline-block;
   width: 75px;
-  transition: all 2s;
+  transition: all .5s ease-in-out;
 }
 .navbar-custom.top-nav-short .img-avatar {
   width: 48px;

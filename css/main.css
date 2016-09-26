@@ -134,6 +134,10 @@ img {
   }
 }
 
+.navbar-custom .container-fluid {
+  max-width: 1280px;
+}
+
 .navbar-custom .navbar-header {
   margin-top: -12px;
 }

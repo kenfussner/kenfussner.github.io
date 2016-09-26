@@ -5,7 +5,8 @@ subtitle: Changes to come
 bigimg: /img/path.jpg
 ---
 
-#Welcome
+Welcome
+=======
 
 As I continue my journey of life and career, I once again am compelled 
 to [attempt to] establish a better online presence for myself. Past attempts 

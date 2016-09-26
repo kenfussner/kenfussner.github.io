@@ -134,11 +134,24 @@ img {
   }
 }
 
+.navbar-custom .navbar-header {
+  margin-top: -12px;
+}
+
+.navbar-custom.top-nav-short .navbar-header {
+  margin-top: 2px;
+}
+
+.navbar-custom .navbar-brand {
+  padding: 0 15px;
+}
+
 .navbar-custom .img-avatar {
   width: 75px;
+  transition: all 2s;
 }
 .navbar-custom.top-nav-short .img-avatar {
-  width: 50px;
+  width: 48px;
 }
 
 /* Multi-level navigation links */

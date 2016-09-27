@@ -3,11 +3,11 @@ layout: minimal
 ---
 
 <style>
-    body {
+    .main-content {
         width: 8.5in;
         height: 11in;
         padding: .5in;
-        margin: 0 auto;
+        margin: 3em auto;
         box-shadow: 0 0 9px 1px #ccc;
         color: #444;
     }
@@ -88,6 +88,16 @@ layout: minimal
         background-color: inherit;
         color: #333;
         border: solid 1px #777;
+    }
+
+    @media print {
+        .main-content {
+            margin: 0 auto;
+        }
+
+        footer {
+            display: none;
+        }
     }
 </style>
 <div class="container-fluid">

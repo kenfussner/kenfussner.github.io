@@ -237,6 +237,10 @@ footer .theme-by {
  
 /* --- Post preview --- */
 
+.posts-list-heading {
+  font-weight: 600;
+}
+
 .post-preview {
   padding: 20px 0;
   border-bottom: 1px solid #eee;
@@ -275,21 +279,16 @@ footer .theme-by {
 .post-preview .post-meta,
 .post-heading .post-meta {
   color: #808080;
-  font-size: 18px;
+  font-size: 16px;
   font-style: italic;
   margin: 0 0 10px;
 }
 .post-preview .post-entry {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-size: 0.85em;
 }
 .post-preview .post-read-more {
-  font-weight: 800;
-}
-
-@media only screen and (min-width: 768px) {
-  .post-preview .post-title {
-    font-size: 36px;
-  }
+  font-weight: 700;
 }
 
 /* --- Tags --- */

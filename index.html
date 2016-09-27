@@ -1,17 +1,21 @@
 ---
 layout: page
 title: Ken Fussner
-subtitle: A scratch on the surface of the life of Ken Fussner
+subtitle: 
+bigimg: /img/path.jpg
+bigimg: /img/path.jpg
+bigimg: /img/path.jpg
 ---
 
+<h2 class="posts-list-heading text-center">Latest Thoughts</h2>
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+	  <h3 class="post-title">{{ post.title }}</h2>
 
 	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
+	  <h4 class="post-subtitle">
 	    {{ post.subtitle }}
 	  </h3>
 	  {% endif %}

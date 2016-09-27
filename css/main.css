@@ -138,18 +138,6 @@ img {
   max-width: 1280px;
 }
 
-.navbar-custom .navbar-header {
-  margin-top: -12px;
-}
-
-.navbar-custom.top-nav-short .navbar-header {
-  margin-top: 2px;
-}
-
-.navbar-custom .navbar-brand {
-  padding: 0 15px;
-}
-
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;

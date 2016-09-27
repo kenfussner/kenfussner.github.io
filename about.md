@@ -4,7 +4,7 @@ title: About Ken
 ---
 
 >I code by day and not by night; well, at least most of the time...
->![ken](../img/kenfussner.jpg){:class="text-center img-circle" :style="width:60px;"}
+>![ken](../img/kenfussner.jpg){:class="img-circle" :width="60px"}
 
 I am a Senior Software Engineer at [NAMIC](http://www.namic.org), where I manage our [handful of] internal systems 
 used to manage the association and deliver numerous value-added services. This position demands 

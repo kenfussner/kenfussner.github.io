@@ -13,20 +13,16 @@ p {
   line-height: 1.5;
   margin: 30px 0;
 }
-p a {
-  /* text-decoration: underline */
-  color: #008AFF;
-}
 h1,h2,h3,h4,h5,h6 {
   font-family: 'Open Sans', 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 800;
 }
 a {
-  color: #008AFF;
+  color: #369;
 }
 a:hover,
 a:focus {
-  color: #0085a1;
+  color: #264d73;
 }
 blockquote {
   color: #808080;
@@ -64,12 +60,12 @@ hr.small {
 ::-moz-selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #4080bf;
 }
 ::selection {
   color: white;
   text-shadow: none;
-  background: #0085a1;
+  background: #4080bf;
 }
 img::selection {
   color: white;
@@ -126,7 +122,7 @@ img {
 
 .navbar-custom .nav li a:hover,
 .navbar-custom .nav li a:focus {
-  color: #0085a1;
+  color: #264d73;
 }
 
 @media only screen and (min-width: 768px) {
@@ -264,7 +260,7 @@ footer .theme-by {
 .post-preview a:focus,
 .post-preview a:hover {
   text-decoration: none;
-  color: #0085a1;
+  color: #264d73;
 }
 
 .post-preview .post-title {
@@ -301,14 +297,14 @@ footer .theme-by {
 }
 
 .blog-tags a {
-  color: #008AFF;
+  color: #369;
   text-decoration: none;
   padding: 0px 5px;
 }
 
 .blog-tags a:hover {
   border-radius: 2px;
-  color: #008AFF;
+  color: #264d73;
   background-color: #CCC;
 }
 
@@ -491,8 +487,8 @@ footer .theme-by {
 .pager li a:hover,
 .pager li a:focus {
   color: #FFF;
-  background: #0085a1;
-  border: 1px solid #0085a1;
+  background: #264d73;
+  border: 1px solid #264d73;
 }
 
 .pager {

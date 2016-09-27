@@ -150,15 +150,6 @@ img {
   padding: 0 15px;
 }
 
-.navbar-custom .img-avatar {
-  display: inline-block;
-  width: 75px;
-  transition: all .5s ease-in-out;
-}
-.navbar-custom.top-nav-short .img-avatar {
-  width: 48px;
-}
-
 /* Multi-level navigation links */
 .navbar-custom .nav .navlinks-container {
   position: relative;

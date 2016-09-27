@@ -94,7 +94,7 @@ url-pretty: "ken.fussner.us"  # eg. "deanattali.com/beautiful-jekyll"
 timezone: "America/Indiana/Indianapolis"
 markdown: kramdown
 highlighter: rouge
-permalink: "/blog/:title/"
+permalink: "/blog/:year/:title/"
 paginate: 5
 
 kramdown:

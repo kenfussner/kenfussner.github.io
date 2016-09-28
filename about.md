@@ -4,7 +4,6 @@ title: About Ken
 cover: 'assets/images/kkff.jpg'
 class: 'page'
 navigation: True
-logo: 'assets/images/logo.png'
 current: about
 ---
 

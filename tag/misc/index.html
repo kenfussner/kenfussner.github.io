@@ -1,0 +1,12 @@
+---
+layout: tag
+title: Ken Fussner
+class: 'home-template'
+navigation: True
+current: tag-misc
+---
+
+
+    {% for post in site.tags.misc %}
+        {% include post_card.html %}
+    {% endfor %}

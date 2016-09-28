@@ -1,9 +1,10 @@
 ---
 layout: page
 title: About Ken
+cover: 'assets/images/kkff.jpg'
 class: 'post'
 navigation: True
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/logo.png'
 current: about
 ---
 

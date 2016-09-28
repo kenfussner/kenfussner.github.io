@@ -2,7 +2,7 @@
 layout: page
 title: About Ken
 cover: 'assets/images/kkff.jpg'
-class: 'post'
+class: 'page'
 navigation: True
 logo: 'assets/images/logo.png'
 current: about

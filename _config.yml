@@ -3,7 +3,6 @@
 #highlighter: pygments
 markdown: kramdown
 highlighter: rouge
-paginate: 5
 language: 'en-uk'
 
 # Website info
@@ -18,7 +17,7 @@ bio: 'A devout catholic man sharing his gifts whenever possible. A software engi
 location: 'Indiana, USA'
 url: 'http://ken.fussner.us/'
 image: 'assets/images/kenfussner.jpg'
-logo: 'assets/images/ghost.png'
+logo: 'assets/images/logo.jpg'
 
 short_url: 'ken.fussner.us/'
 google_analytics: #UA-69281367-1
@@ -33,7 +32,6 @@ permalink: /blog/:year/:title
 
 
 # gems and other configs
-gems: [jekyll-paginate]
 exclude: [vendor]
 
 # Additional settings available on the front-matter

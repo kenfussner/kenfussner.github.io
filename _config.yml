@@ -26,7 +26,7 @@ disqus: kenfussner
 baseurl: /
 
 # Permalinks
-permalink: /blog/:year/:title
+permalink: /blog/:year/:title/
 # permalink: /author/:username
 # permalink: /tag/:tag
 

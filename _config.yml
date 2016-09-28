@@ -18,6 +18,7 @@ bio: 'A devout catholic man sharing his gifts whenever possible. A software engi
 location: 'Indiana, USA'
 url: 'http://ken.fussner.us/'
 image: 'assets/images/kenfussner.jpg'
+logo: 'assets/images/ghost.png'
 
 short_url: 'ken.fussner.us/'
 google_analytics: #UA-69281367-1

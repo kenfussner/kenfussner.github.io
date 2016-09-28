@@ -1,17 +1,39 @@
 ---
-layout: page
-title: Blog
+layout: default
+title: Ken Fussner
 cover: 'assets/images/cover1.jpg'
-class: 'page'
+class: 'home-template'
 navigation: True
-current: blog
+current: home
 ---
 
-<div class="archives" itemscope itemtype="http://schema.org/Blog">
-{% for post in site.posts reverse %}
-{% if post.layout == 'post' %}
-	{% include post_card.html %}
-{% endif %}
-{% endfor %}
-  </ul>
-</div>
+<header class="main-header {% if page.cover %}"
+        style="background-image: url({{ site.baseurl }}{{ page.cover }}) {% else %}no-cover{% endif %}">
+    <nav class="main-nav overlay clearfix">
+        <a class="blog-logo" href="{{ site.baseurl }}"><img src="{{ site.baseurl }}{{ site.logo }}" alt="Blog Logo" /></a>
+        {% if page.navigation %}
+            <a class="menu-button icon-menu" href="#"><span class="word">Menu</span></a>
+        {% endif %}
+    </nav>
+    <div class="vertical">
+        <div class="main-header-content inner">
+            <h1 class="page-title">{{ site.name }}</h1>
+            <h2 class="page-description">{{ site.description }}</h2>
+        </div>
+    </div>
+    <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+</header>
+
+<main id="content" class="content" role="main">
+
+    {% for post in site.posts limit:5 %}
+        {% include post_card.html %}
+    {% endfor %}
+    
+    <div id="more"></div>
+
+    {% for post in site.posts offset:5 %}
+        {% include post_card.html %}
+    {% endfor %}
+
+</main>

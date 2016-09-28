@@ -32,10 +32,10 @@ current: author
             {% if site.url %}<span class="author-link icon-link"><a href="{{ site.url }}">{{ site.short_url }}</a></span>{% endif %}
         </div>
     </section>
-    
+
 <main id="content" class="content" role="main">
 
-    {% for post in site.categories.{{ site.author }} %}
+    {% for post in site.categories.ken %}
         {% include post_card.html %}
     {% endfor %}
 

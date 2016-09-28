@@ -1,9 +1,29 @@
-# project
-_site
-.sass-cache
-.vagrant
-
-# general
+# OS X
 .DS_Store
-Thumbs.db
-ehthumbs.db
+
+# Jekyll build
+/_site/
+.jekyll-metadata
+#Gemfile.lock
+
+# webstorm
+.idea/
+
+# others
+*.swp
+
+# site build
+*.gem
+*.rbc
+.bundle
+.config
+coverage
+InstalledFiles
+lib/bundler/man
+pkg
+rdoc
+spec/reports
+test/tmp
+test/version_tmp
+tmp
+vendor

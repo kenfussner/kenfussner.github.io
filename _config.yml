@@ -1,181 +1,75 @@
-# --- General options --- #
-
-# url is the full website URL
-# baseurl is the website's URL without the hostname
-
-# If you are building a simple GitHub user page (http://username.github.io) then use these settings:
-url: "http://ken.fussner.us"
-baseurl: ""
-
-# If you are building a GitHub project page then use these settings:
-#url: "http://username.github.io/projectname"
-#baseurl: "/projectname"
-
-# Of course don't forget to change the username and projectname to YOUR username and project
-
-# Name of website
-title: Ken Fussner
-
-# Short description of your site
-description: 
-
-# --- Navigation bar options --- #
-
-# List of links in the navigation bar
-navbar-links:
-  About: "about"
-  Resume: "resume"
-  Blog: "blog"
- # Blog:
- #   - Latest: "blog"
- #   - Food: "category/food"
-
-# Image to show in the navigation bar - image must be a square (width = height)
-# Remove this parameter if you don't want an image in the navbar
-avatar: "/img/kenfussner.jpg"
-
-# --- Footer options --- #
-
-# Change all these values or delete the ones you don't want.
-# Important: you must keep the "name" parameter, everything else you can remove
-author:
-  name: Ken Fussner
-  email: "ken@fussner.us"
-  # facebook: yourname  # eg. daattali
-  github: kenfussner    # eg. daattali
-  twitter: kenfussner   # eg. daattali
-  # google-plus: +yourname   # eg. +DeanAttali or 109424658772469020925
-  linkedin: kenfussner  # eg. daattali
-  # xing: yourname      # eg. daattali
-  stackoverflow: kenfussner  # eg. "3943160/daattali"
-  # snapchat: yourname  # eg. daattali
-  # instagram: yourname # eg. daattali
-  # youtube: yourlink   # eg. user/daattali or channel/daattali
-  # spotify: yourname   # eg. daattali
-
-# Select which links to show in the footer
-footer-links-active:
-  rss: false
-  facebook: false
-  email: true
-  twitter: true
-  google-plus: false
-  github: true
-  linkedin: false
-  xing: false
-  stackoverflow: false
-  snapchat: false
-  instagram: false
-  youtube: false
-  spotify: false
-
-# Select which share links to show in posts
-share-links-active:
-  twitter: true
-  facebook: true
-  google: false
-  linkedin: true
-
-# How to display the link to the website in the footer
-# Remove this if you don't want a link in the footer
-url-pretty: "ken.fussner.us"  # eg. "deanattali.com/beautiful-jekyll"
-
-# --- Misc --- #
-
-# Fill in your Disqus shortname (NOT the userid) if you want to support Disqus comments
-#disqus: ""
-
-# Fill in your Google Analytics ID to track your website using GA
-#google_analytics: ""
-
-# --- Don't need to touch anything below here (but you can if you want) --- #
-
-# Output options (more information on Jekyll's site)
-timezone: "America/Indiana/Indianapolis"
+# Jykell configuration
+#markdown: redcarpet
+#highlighter: pygments
 markdown: kramdown
 highlighter: rouge
-permalink: "/blog/:year/:title/"
 paginate: 5
+language: 'en-uk'
 
-kramdown:
-  input: GFM
+# Website info
+name: 'Ken Fussner'
+description: "A humble software engineer venturing to do good. His story unfolds here."
 
-# Default YAML values (more information on Jekyll's site)
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      comments: true  # add comments to all blog posts
-      social-share: true # add social media sharing buttons to all blog posts
-  -
-    scope:
-      path: "" # all files
-    values:
-      layout: "page"
-      show-avatar: true
+# Author's info
+author: 'Ken Fussner'
+# edit 'categories' in the front matter of every post to match this username
+nickname: ken
+bio: 'A devout catholic man sharing his gifts whenever possible. A software engineer with more people skills than most [engineers].'
+location: 'Indiana, USA'
+url: 'http://ken.fussner.us/'
+image: 'assets/images/kenfussner.jpg'
 
-# Use tags pages (not recommended if you are deploying via GitHub pages, only set to true if deploying locally with ruby)
-link-tags: false
+short_url: 'ken.fussner.us/'
+google_analytics: #UA-69281367-1
+disqus: kenfussner
+# edit baseurl to simply '/' if using as your personal page (instead of a project page)
+baseurl: /
 
-# Exclude these files from production site
+# Permalinks
+permalink: /blog/:year/:title
+# permalink: /author/:username
+# permalink: /tag/:tag
+
+
+# gems and other configs
+gems: [jekyll-paginate]
+exclude: [vendor]
+
+# Additional settings available on the front-matter
+# Site logo in the index.html (as in demo.ghost.io)
+# Author's page cover in _layouts/author.html
+# The same for page.html and tag.html layouts
+# Post's page cover as a per-post basis _posts/...
+# Disqus comments as a per-post basis
+# ...
+
+
+# Settings for builing master branch with travis-ci
+# with jekyll-travis
+
+# Settings for deploy rake task
+# Username and repo of Github repo, e.g.
+# https://github.com/USERNAME/REPO.git
+# username defaults to ENV['GIT_NAME'] used by Travis
+# repo defaults to USERNAME.github.io
+# Branch defaults to "source" for USERNAME.github.io
+# or "master" otherwise
+safe: false
+lsi: false
+username: kenfussner
+repo: kenfussner.github.io
+branch: master
+relative_source: ../
+destination: ../blog/
+production_url:  http://ken.fussner.us/
+source_url:      http://ken.fussner.us/
+
 exclude:
+  - README.md
+  - Rakefile
   - Gemfile
   - Gemfile.lock
-  - LICENSE
-  - README.md
-  - CNAME
-  - Vagrantfile
-
-# prose.io config
-prose:
-  rooturl: '_posts'
-  media: 'img'
-  ignore:
-    - 404.html
-    - LICENSE
-    - feed.xml
-    - _config.yml
-    - /_layouts
-    - /_includes
-    - /css
-    - /img
-    - /js
-  metadata:
-    _posts:
-      - name: "layout"
-        field:
-          element: "hidden"
-          value: "post"
-      - name: "title"
-        field:
-          element: "text"
-          label: "Post title"
-          placeholder: "Title"
-          alterable: true
-      - name: "subtitle"
-        field:
-          element: "textarea"
-          label: "Subtitle"
-          placeholder: "A description of your post."
-          alterable: true
-      - name: "date"
-        field:
-          element: "text"
-          label: "Date"
-          help: "Enter date of post."
-          placeholder: "yyyy-mm-dd"
-          alterable: true
-      - name: "published"
-        field:
-          element: "checkbox"
-          label: "Publish"
-          help: "Check to publish post, uncheck to hide."
-
-gems:
-  - jekyll-paginate
-
-# Beautiful Jekyll / Dean Attali
-# 2fc73a3a967e97599c9763d05e564189
+  - changelog.md
+  - "*.Rmd"
+  - vendor
+  - .travis.yml

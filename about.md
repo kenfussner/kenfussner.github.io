@@ -1,6 +1,10 @@
 ---
 layout: page
 title: About Ken
+class: 'post'
+navigation: True
+logo: 'assets/images/ghost.png'
+current: about
 ---
 
 >I code by day and not by night; well, at least most of the time...
@@ -15,4 +19,4 @@ While my work is very rewarding to me, I live for my faith and my family. I shar
 faith with my wife and 2 girls, with whom I spend most of my time outside of work. We're fortunate to 
 share many common hobbies, such as cooking/baking/eating, gardening, building things (be it with legos, 
 magnatiles, boxes, wood, blankets, ...), getting outdoors, sports, and whatever other adventures we can
-conjure up. We are very blessed, and we try to give unto others as much as we can everyday. 
+conjure up. We are very blessed, and we try to give unto others as much as we can everyday.

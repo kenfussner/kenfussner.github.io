@@ -3,7 +3,7 @@
 #highlighter: pygments
 markdown: kramdown
 highlighter: rouge
-language: 'en-uk'
+language: 'en-us'
 
 # Website info
 name: 'Ken Fussner'

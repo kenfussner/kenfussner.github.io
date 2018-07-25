@@ -22,8 +22,8 @@ logo: '/assets/images/logo.png'
 short_url: 'ken.fussner.us/'
 google_analytics: #UA-69281367-1
 disqus: kenfussner
-# edit baseurl to simply '/' if using as your personal page (instead of a project page)
-baseurl: /
+# edit baseurl to simply '' if using as your personal page (instead of a project page)
+baseurl: ''
 
 # Permalinks
 permalink: /blog/:year/:title/

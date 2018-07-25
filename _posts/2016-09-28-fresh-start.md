@@ -1,6 +1,6 @@
 ---
 layout: post
-cover: 'assets/images/cover7.jpg'
+cover: '/assets/images/cover7.jpg'
 title: A Fresh Start
 tags: misc
 subclass: 'post post-template tag-content'

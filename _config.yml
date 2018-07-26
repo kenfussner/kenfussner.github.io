@@ -15,7 +15,7 @@ author: 'Ken Fussner'
 nickname: ken
 bio: 'A friend to some, family to fewer, and a kind smile to the rest. I am a Senior Software Engineer in the Indianapolis area, spending most of my time with family and friends.'
 location: 'Indiana, USA'
-url: 'http://ken.fussner.us/'
+url: 'https://ken.fussner.us/'
 image: '/assets/images/kenfussner.jpg'
 logo: '/assets/images/logo.png'
 
@@ -60,8 +60,8 @@ repo: kenfussner.github.io
 branch: master
 relative_source: ../
 destination: ../blog/
-production_url:  http://ken.fussner.us/
-source_url:      http://ken.fussner.us/
+production_url:  https://ken.fussner.us/
+source_url:      https://ken.fussner.us/
 
 exclude:
   - README.md

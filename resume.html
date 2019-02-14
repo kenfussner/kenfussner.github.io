@@ -9,90 +9,126 @@ current: resume
     .site-wrapper {
         width: 8.5in;
         height: 11in;
-        padding: .5in;
         margin: 3em auto;
         box-shadow: 0 0 9px 1px #ccc;
-        color: #444;
+        color: #343a40;
         letter-spacing: initial;
+        font-size: 1.45rem;
+        font-family: 'karla', sans-serif;
+        display: flex;
     }
-    
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        color: #222;
+
+    main {
+        padding: .5in;
+        width: 6in;
     }
-    
-    h2,
-    h5,
-    .achievement strong {
-        color: #369 !important;
+
+    aside {
+        width: 2.5in;
+        padding: .5in;
+        border-left: 1px solid #dee2e6;
     }
-    
-    h1 {
-        margin-top: 0;
-        padding-top: 0;
-        font-weight: bold;
-        text-transform: uppercase;
+
+    .media {
+        display: flex;
+        align-items: flex-start;
     }
-    
-    h2 {
-        font-weight: bold;
-        font-size: 26px;
-        margin-top: 0;
-    }
-    
-    h3 {
-        text-transform: uppercase;
-        font-weight: bold;
-        display: block;
-        border-bottom: solid 3px;
-        margin-top: 36px;
-        padding-bottom: 5px;
-        margin-bottom: 15px;
-    }
-    
-    h4 {
-        font-size: 20px;
-    }
-    
-    h5 {
-        font-size: 16px;
-        font-weight: bold;
-    }
-    
-    hr {
-        margin-top: 12px;
-        margin-bottom: 12px;
-    }
-    
-    .img-avatar {
-        display: none;
+
+    .media img {
         width: 80px;
+        height: 80px;
+        margin-right: 1rem;
+        vertical-align: middle;
+        border-style: none;
+        border-radius: 50%;
     }
-    
-    #meta {
-        margin-top: 3px;
-        padding-top: 6px;
-        border-top: dashed 1px #ccc;
+
+    .media .media-body {
+        flex: 1;
     }
-    
-    .facts {
-        padding: 10px 0 0 18px;
+
+    .list-group {
+        display: flex;
+        flex-direction: column;
+        padding-left: 0;
+        margin-bottom: 0;
     }
-    
-    .facts li {
-        line-height: 1.1em;
-        padding: 2px 0;
+    .list-group-item {
+        border: 0;
+    }
+
+    .list-group-item.border-bottom:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        border: 1px solid #0077b5;
+        width: var(--percentage);
+    }
+
+    .heading1 {
+        font-weight: 700;
+        font-size: 3.3rem;
+    }
+    .heading2 {
+        font-size: 2rem;
+        margin-top: 2.5rem;
+        margin-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .heading3 {
+        font-size: 1.75rem;
+        font-weight: 700;
+        margin-bottom: 0;
+    }
+
+    .heading4 {
+        font-size: 1.5rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+
+    .text-dark {
+        color: #343a40;
+    }
+    .text-linkedin,
+    .text-linkedin i:before {
+        color: #0077b5 !important;
+    }
+
+    .mr-3 {
+        margin-right: 1rem;
+    }
+    .ml-3 {
+        margin-left: 1rem;
+    }
+    .border-left {
+        border-left: 1px solid #dee2e6;
+    }
+    .border-bottom {
+        border-bottom: 1px solid #dee2e6;
+    }
+    .pl-5 {
+        padding-left: 3rem;
+    }
+    .py-2 {
+        padding-top: .5rem;
+        padding-bottom: .5rem;
+    }
+    .m-0 {
         margin: 0;
     }
-    
-    .label-outline {
-        background-color: inherit;
-        color: #333;
-        border: solid 1px #777;
+    .mb-4 {
+        margin-bottom: 1.5rem;
+    }
+    .px-0 {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .py-1 {
+        padding-top: .25rem;
+        padding-bottom: .25rem;
     }
 
     @media print {
@@ -100,182 +136,93 @@ current: resume
             margin: 0 auto;
         }
 
+        a:after {
+            content: "" !important;
+        }
+
         footer {
             display: none;
         }
     }
 </style>
-<div class="container-fluid">
-    <h1>Kenneth Fussner</h1>
-    <h2>Software Engineer</h2>
+<main>
+<div class="media">
+<img class="mr-3 rounded-circle" src="profile.jpg" />
+<div class="media-body ml-3">
+    <div class="heading1 mt-0 text-dark">Ken Fussner</div>
+    <div class="text-linkedin">Software Engineering Manager</div>
+    <span><i class="fa fa-map-marker"></i> Indianapolis, IN Area</span>
 </div>
-
-<div id="meta" class="container-fluid">
-    <div class="row">
-        <div class="col-xs-3">
-            <strong>
-                    <i class="fa fa-envelope"></i> ken@fussner.us
-                </strong>
+</div>
+<div class="heading2 text-linkedin">Profile</div>
+<div class="border-left pl-5">
+    I'm a software engineering manager with a decade of hands-on experience across the full stack and
+    the full software development life cycle. My passion is in leveraging technology to help people.
+</div>
+<div class="heading2 text-linkedin">Experience</div>
+    <div class="border-left pl-5">
+        <div class="py-2">
+            <div class="heading3">Software Engineering Manager</div>
+            <small class="text-muted">@ National Association of Mutual Insurance Companies (NAMIC)</small>
+            <div class="heading4 text-linkedin">Jan 2019 - Present</div>
+            <p>Ochestrating the agile transformation (and development)</p>
         </div>
-        <div class="col-xs-3">
-            <strong>
-                    <i class="fa fa-phone"></i> (317) 941-1345 
-                </strong>
+        <div class="py-2">
+            <div class="heading3">Senior Software Engineer</div>
+            <small class="text-muted">@ National Association of Mutual Insurance Companies (NAMIC)</small>
+            <div class="heading4 text-linkedin">Aug 2014 - Jan 2019</div>
+            <p>Lead the modernization of proprietary software into a SaaS offering</p>
         </div>
-        <div class="col-xs-3">
-            <strong>
-                    <i class="fa fa-map-marker"></i> Westfield, IN
-                </strong>
+        <div class="py-2">
+            <div class="heading3">Web Developer</div>
+            <small class="text-muted">@ T2 Systems</small>
+            <div class="heading4 text-linkedin">Nov 2012 - Aug 2014</div>
+            <p>Enhanced B2C SaaS application and lead customer engagements</p>
         </div>
-        <div class="col-xs-3">
-            <strong>
-                    <i class="fa fa-link"></i> ken.fussner.us 
-                </strong>
+        <div class="py-2">
+            <div class="heading3">Web Developer</div>
+            <small class="text-muted">@ Fischer Homes</small>
+            <div class="heading4 text-linkedin">May 2011 - Nov 2012</div>
+            <p>Team player in web enhancements, marketing efforts, and support</p>
+        </div>
+        <div class="py-2">
+            <div class="heading3">Technology Coordinator</div>
+            <small class="text-muted">@ St Thomas Aquinas - The Catholic Center at Purdue</small>
+            <div class="heading4 text-linkedin">Aug 2007 - May 2011</div>
+            <p>Managed IT, web applications, print materials, and support</p>
         </div>
     </div>
-</div>
-
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-xs-7">
-            <h3>Experience</h3>
-            <div>
-                <h4>Senior Software Engineer</h4>
-                <h5>NAMIC</h5>
-                <div class="row small">
-                    <div class="col-xs-6">
-                        <i class="fa fa-calendar"></i> Aug 2014 - Ongoing
-                    </div>
-                    <div class="col-xs-6">
-                        <i class="fa fa-map-marker"></i> Indianapolis, IN
-                    </div>
-                </div>
-                <ul class="facts">
-                    <li>Design and establish integrated solutions for internal and external customers</li>
-                    <li>Lead software development and support</li>
-                    <li>Manage expectations and communications with stakeholders</li>
-                </ul>
-            </div>
-            <hr />
-            <div>
-                <h4>Web Developer</h4>
-                <h5>T2 Systems</h5>
-                <div class="row small">
-                    <div class="col-xs-6">
-                        <i class="fa fa-calendar"></i> Nov 2012 - Aug 2014
-                    </div>
-                    <div class="col-xs-6">
-                        <i class="fa fa-map-marker"></i> Indianapolis, IN
-                    </div>
-                </div>
-                <ul class="facts">
-                    <li>Enhance C# ASP.NET SaaS product</li>
-                    <li>Lead engagement on customer projects</li>
-                    <li>Provide tier III technical support</li>
-                </ul>
-            </div>
-            <hr />
-            <div>
-                <h4>Web Developer</h4>
-                <h5>Fischer Homes</h5>
-                <div class="row small">
-                    <div class="col-xs-6">
-                        <i class="fa fa-calendar"></i> May 2011 - Nov 2012
-                    </div>
-                    <div class="col-xs-6">
-                        <i class="fa fa-map-marker"></i> Indianapolis, IN
-                    </div>
-                </div>
-                <ul class="facts">
-                    <li>Refactor ASP.NET (C#, Web Forms) interal and external facing web applications</li>
-                    <li>Lead numerous special focus projects</li>
-                    <li>Provide technical support to internal customers</li>
-                </ul>
-            </div>
-            <hr />
-            <div>
-                <h4>Technology Coordinator</h4>
-                <h5>St. Thomas Aquinas Center</h5>
-                <div class="row small">
-                    <div class="col-xs-6" style="font-size:.98em;">
-                        <i class="fa fa-calendar"></i> Aug 2007 - May 2011
-                    </div>
-                    <div class="col-xs-6">
-                        <i class="fa fa-map-marker"></i> West Lafayette, IN
-                    </div>
-                </div>
-                <ul class="facts">
-                    <li>Manage all tech resources and systems</li>
-                    <li>Design and develop websites, applications, and various media publications</li>
-                    <li>Provide technical support to internal customers</li>
-                </ul>
-            </div>
+    <div class="heading2 text-linkedin">Education</div>
+        <div class="border-left pl-5">
+            <div class="heading3">BS, Interdisciplinary Science</div>
+            <div class="heading4">Purdue University | 2011</div>
         </div>
-        <div class="col-xs-5">
-            <h3>Expertise</h3>
-            <div>
-                <span class="label label-default label-outline">Software Development</span>
-                <span class="label label-default label-outline">Project Management</span>
-                <span class="label label-default label-outline">Web Design</span>
-                <span class="label label-default label-outline">Relational Database Design</span>
-                <span class="label label-default label-outline">Agile</span>
-                <span class="label label-default label-outline">HTML5</span>
-                <span class="label label-default label-outline">CSS3</span>
-                <span class="label label-default label-outline">JavaScript</span>
-                <span class="label label-default label-outline">Technical Communication</span>
-                <span class="label label-default label-outline">Technical Support</span>
-                <br /><br />
-                <span class="label label-default label-outline">C# ASP.NET</span>
-                <span class="label label-default label-outline">Visual Studio</span>
-                <span class="label label-default label-outline">TFS / VSTS</span>
-                <span class="label label-default label-outline">GIT</span>
-                <span class="label label-default label-outline">Azure</span>
-                <span class="label label-default label-outline">JQuery</span>
-                <span class="label label-default label-outline">Bootstrap</span>
-                <span class="label label-default label-outline">AngularJS</span>
-            </div>
-
-            <h3>Achievements</h3>
-            <div class="row achievement">
-                <div class="col-xs-2">
-                    <i class="fa fa-2x fa-bullhorn"></i>
-                </div>
-                <div class="col-xs-10">
-                    <strong>Effective Communication</strong><br />with stakeholders at all levels
-                </div>
-            </div>
-            <hr />
-            <div class="row achievement">
-                <div class="col-xs-2">
-                    <i class="fa fa-2x fa-list-alt"></i>
-                </div>
-                <div class="col-xs-10">
-                    <strong>Project Management</strong><br />from concept through deliverable
-                </div>
-            </div>
-
-            <h3>Goals</h3>
-            <ul class="fa-ul">
-                <li><i class="fa-li fa fa-bullseye"></i>Serve as engineering team lead</li>
-                <li><i class="fa-li fa fa-bullseye"></i>Engage in project architecture/design</li>
-                <li><i class="fa-li fa fa-bullseye"></i>Progress in leadership/management</li>
-
-            </ul>
-            <hr />
-
-            <h3>Education</h3>
-            <div>
-                <h4>B.S. Interdisciplinary Science</h4>
-                <h5>Purdue University</h5>
-                <div class="small">
-                    <div class="pull-left">
-                        <i class="fa fa-calendar" style="margin-right:.25rem;"></i> Aug 2006 - May 2011
-                    </div>
-                    <div class="pull-right">
-                        <i class="fa fa-map-marker" style="margin-right:.25rem;"></i> West Lafayette, IN
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+</main>
+<aside>
+<div class="heading2 text-linkedin">Contact</div>
+<ul class="list-group pb-5">
+<li class="list-group-item m-0 px-0 py-1">+1 (317) 941-1345</li>
+<li class="list-group-item m-0 px-0 py-1"><a href="mailto:ken@fussner.us" class="text-dark">ken@fussner.us</a></li>
+<li class="list-group-item m-0 px-0 py-1"><a href="https://ken.fussner.us" class="text-dark">https://ken.fussner.us</a></li>
+<li class="list-group-item m-0 px-0 py-1"><a href="https://linkedin.com/in/kenfussner/" class="text-linkedin"><i class="fa fa-linkedin-square"></i> /in/kenfussner</a></li>
+</ul>
+<div class="heading2 text-linkedin">Skills</div>
+<ul class="list-group">
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 100%;">HTML/CSS/JavaScript</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 90%;">SQL</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 85%;">C#</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 70%;">UI/UX</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 95%;">Debugging</li>
+    <li class="list-group-item m-0 px-0 py-1">&nbsp;</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 85%;">Visual Studio</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 75%;">GIT</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 75%;">Azure</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 85%;">Security</li>
+    <li class="list-group-item m-0 px-0 py-1">&nbsp;</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 95%;">Technical Aptitude</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 90%;">Communication</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 75%;">Project Management</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 60%;">People Management</li>
+    <li class="list-group-item border-bottom m-0 px-0 py-1 mb-4" style="--percentage: 70%;">Leadership</li>
+</ul>
+</aside>

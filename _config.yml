@@ -7,13 +7,13 @@ language: 'en-us'
 
 # Website info
 name: 'Ken Fussner'
-description: "Software Engineering Manager | Servant Leader"
+description: "Software Engineering Manager"
 
 # Author's info
 author: 'Ken Fussner'
 # edit 'categories' in the front matter of every post to match this username
 nickname: ken
-bio: 'A friend to some, family to fewer, and a kind smile to the rest. I am a Senior Software Engineer in the Indianapolis area, spending most of my time with family and friends.'
+bio: 'A software engineering manager with a decade of hands-on experience across the full stack and the full software development life cycle. My passion is in leveraging technology to help people.'
 location: 'Indiana, USA'
 url: 'https://ken.fussner.us/'
 image: '/assets/images/kenfussner.jpg'
